@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: antiquewhite;
+ }
+
+.main-section {
+    background: black;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 8%;
+}
+
+.logo-section {
+    display: flex;
+}
+
+ul.ul-item {
+    display: flex;
+    column-gap: 20px;
+}
+
+nav.ul-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-para {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.ul-item>li {
+    list-style: none;
+}
+
+.item a {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #1ed760;
+}
+
+.bottom {
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
+
+.song-list {
+    
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto;
+    background: black;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 23PX;
+    background: url(bg.jpg)no-repeat center center /cover;
+    
+}
+
+input#progress {
+    width: 90%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.icon-tab i {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    padding-right: 2px;
+
+}
+
+
+.icon-tab {
+    padding-top: 15px;
+    padding-left: 23.5%;
+    position: fixed;
+    bottom: 10px;
+    right: 46%;
+   
+
+}
+
+.background-heading {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+}
+
+.song-item {
+    margin-top: 20px;
+}
+
+.songCover {
+    width: 40%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 6px;
+}
+
+.songCover .songName {
+    color: black;
+}
+
+.songCover img {
+    width: 8%;
+    border-radius: 50px;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+
+.song-info img {
+    width: 5%;
+    margin-right: 17px;
+    opacity: 0; 
+     transition: opacity 0.4s ease-in-out; 
+}
+.time-laps i {
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+}

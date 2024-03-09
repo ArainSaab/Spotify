@@ -1,0 +1,223 @@
+<!DOCTYPE htm <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Spotify</title>
+    <link rel="shortcut icon" href="login.png" type="image/x-icon">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: rgba(0, 0, 0, 0.7) url(abstract-background-curved-lines_23-2147635200.jpg) no-repeat center center/cover;
+            background-blend-mode: darken;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+
+
+
+        }
+
+        .formsection {
+            margin-top: 125px;
+
+        }
+
+        .formlist {
+
+            display: flex;
+            justify-content: center;
+
+            height: 59%;
+        }
+
+        form {
+            width: 29%;
+            border-radius: 20px;
+            background-blend-mode: darken;
+            background: rgba(0, 0, 0, 0.7) url(abstract-vector-blue-mesh-background-chaotically-connected-points-polygons-flying-space-flying-debris-futuristic-technology-style-card-lines-points-circles-planes-futuristic-design_1217-653.jpg) no-repeat center center/cover;
+        }
+
+        .input-value {
+            display: block;
+            margin: auto;
+            border: 2px solid rgb(155, 155, 155);
+            padding: 15px;
+            background: none;
+            font-size: 17px;
+            width: 250px;
+            outline: none;
+
+        }
+
+        .input-value1 {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            border: 2px solid rgb(155, 155, 155);
+            padding: 15px;
+            font-size: 17px;
+            background: none;
+            width: 250px;
+            outline: none;
+
+
+        }
+
+      
+
+        input {
+            background: none;
+
+        }
+
+        #name {
+            border: none;
+            outline: none;
+             background-color: transparent !important;
+             color: white;
+
+        }
+
+        #password {
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+
+        .btn {
+            display: block;
+            margin: auto;
+            width: 250px;
+            padding: 15px;
+            margin-top: 14px;
+            background: darkgrey;
+            border: none;
+            cursor: pointer;
+
+
+        }
+
+
+        h1 {
+            background: none;
+            display: flex;
+            justify-content: center;
+
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .formerror {
+           margin-top: 5px;
+            color: red;
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formsection">
+            <div class="formlist">
+                <form action="" name="myform" onsubmit="return validateform()" method="get">
+                    <h1>Login</h1>
+                    <div class="input-value">
+                        <input type="name" id="name" name="fname" placeholder="Enter Your Name" required><br>
+                    </div>
+                    <b>
+                        <p class="formerror"></p>
+                    </b>
+                    <div class="input-value1">
+                        <input type="password" name="password" id="password" placeholder="Password" required><br>
+                    </div>
+                    <b>
+                        <p class="formerror"></p>
+                    </b>
+                    <button class="btn" onclick="validateform()">Login</button>
+
+
+                    <!-- <a href="#" class="item">Forgotten password?</a>
+                    <a href="tut.html"></a>
+                    <hr> -->
+                    <!--                  
+                            <button  type="button" id="button">  Create a new account </button> -->
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <script src="java.js">
+       
+    </script> -->
+    <!-- 
+    <script>
+        function seterror(id, error) {
+            element = document.getElementById(id);
+            element = document.getElementsByClassName('formerror')[0].innerHTML = error;
+
+        }
+       
+        function seterror1(id, error) {
+            element = document.getElementById(id);
+            element = document.getElementsByClassName('formerror')[1].innerHTML = error;
+
+        }
+       
+        function validateform() {
+            returnval = true;
+            Name = document.forms['myform']["fname"].value;
+            if (Name.length < 5) {
+                seterror("Name", "*Lenght of name  too short")
+                returnval = false;
+            }
+            else if (Name == "Alihasan") {
+                seterror("Name", "Login")
+                returnval = false;
+            }
+            else {
+                seterror("name", "*Username is wrong")
+                returnval = false;
+            }
+            password = document.forms['myform']["password"].value;
+            if (password.length > 10) {
+                seterror1("password", "*Lenght of password too long")
+               
+                returnval = false;
+
+            }
+            else if (password == 12345678) {
+                seterror1("password", "Login")
+                returnval = false;
+               
+            }
+            else{
+                seterror1("password", "*Wrong password")
+                returnval = false;
+                
+            }
+            return returnval;
+        }
+    </script> -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
